@@ -1,18 +1,17 @@
 // Validation //
 
-
 //  Message form validation 
 function validateForm() {
     var returnval = true;
     clearErrors();
 
     // Name
-    var fname = document.forms['myForm']["name"].value;
-    if (fname.length == 0) {
-        seterror("fname", "*First name is required");
+    var name = document.forms['myForm']["name"].value;
+    if (name.length == 0) {
+        seterror("name", "*First name is required");
         returnval = false;
-    } else if (!isNaN(fname)) {
-        seterror("fname", "*Enter valid name");
+    } else if (!isNaN(name)) {
+        seterror("name", "*Enter valid name");
         returnval = false;
     }
 
@@ -54,7 +53,13 @@ function clearErrors() {
 }
 
 function seterror(id, error) {
-    //sets error inside tag of id 
     element = document.getElementById(id);
     element.getElementsByClassName('formerror')[0].innerHTML = error;
 }
+
+
+// Thank You Message
+function hideThankYouBox() {
+    var divToHide = document.getElementById("ThankYouBox");
+    divToHide.style.display = "none";
+  }
