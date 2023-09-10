@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    padding: 50px;
+}
+
+body {
+    background-color: #F4F6F7;
+}
+
+/* Home*/
+.home-page {
+    height: 100vh;
+    background-image: url('image/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* About Page */
+.about-page {
+    display: flex;
+    justify-content: center;
+    padding: 50px 100px;
+}
+
+.aboutImg {
+    margin: 0px 20px;
+}
+
+.aboutInfo {
+    margin: 0px 20px;
+}
+
+.about-page img {
+    height: 600px;
+    border-radius: 10px;
+}
+
+.aboutInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.adata {
+    margin: 30px 20px;
+}
+
+.aboutInfo h1 {
+    text-transform: uppercase;
+    color: rgb(209, 32, 32);
+    font-size: 50px;
+    font-style: italic;
+}
+
+.aboutInfo h3 {
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: rgb(57, 188, 240);
+}
+
+.aboutInfo p {
+    align-items: center;
+    color: rgb(176, 176, 255);
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.orderProduct {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 20px;
+    color: darkred;
+}
+
+.orderProduct button {
+    background-color: rgb(196, 196, 48);
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    font-size: 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    /* margin-left: 20px; */
+}
+
+.orderProduct i {
+    margin: 0px 10px;
+}
+
+.orderProduct button:hover {
+    background-color: rgba(196, 196, 48, 0.855);
+}
+
+
+
+/* Product  */
+.product-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.productCard {
+    background-color: white;
+    margin: 20px 10px;
+}
+
+.productImg {
+    height: 300px;
+    width: 300px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.productImg img {
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.productAbout {
+    padding: 20px 10px;
+}
+
+.productAbout h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: red;
+}
+
+.productAbout p {
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.productAbout button {
+    background-color: rgb(255, 10, 10);
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    font-size: 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.productAbout button i {
+    padding: 2px 10px;
+}
+
+.productAbout button:hover {
+    background-color: rgba(255, 10, 10, 0.814);
+}
+
+/* Contact page */
+.formerror {
+    padding-left: 10px;
+    color: red;
+    opacity: 50%;
+}
+
+.contact-page {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.contactImg {
+    height: 500px;
+    margin: 50px;
+}
+
+.contactImg img {
+    height: 100%;
+}
+
+.contactForm {
+    padding: 20px 30px;
+    margin: 50px;
+}
+
+.inputGroup {
+    margin-top: 15px;
+}
+
+.inputGroup input, textarea {
+    height: 50px;
+    width: 350px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid skyblue;
+    padding: 0px 10px;
+    margin-top: 5px;
+}
+
+.inputGroup textarea {
+    resize: none;
+    padding: 10px;
+}
+
+.inputGroup button {
+    height: 40px;
+    width: 370px;
+    border-radius: 4px;
+    outline: none;
+    padding: 0px 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.inputGroup button:hover {
+    background-color: rgba(255, 0, 0, 0.849);
+}
+
+
+.inputGroup label {
+    font-weight: 300;
+    color: rgb(255, 0, 0);
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+
+    /* About Page */
+    .about-page {
+        flex-direction: column;
+        padding: 0px 0px;
+    }
+
+    .aboutImg {
+        margin: 0px 0px;
+    }
+
+    .aboutInfo {
+        margin: 0px 0px;
+    }
+
+    .about-page img {
+        height: 400px;
+    }
+
+    .aboutInfo h3 {
+        margin: 20px 0px;
+        font-size: 30px;
+    }
+
+    .aboutInfo p {
+        font-size: 22px;
+    }
+
+    .orderProduct {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0px;
+    }
+
+    .orderProduct button {
+        margin-top: 10px;
+    }
+
+    /* Product section */
+    #product {
+        margin-top: -100px;
+    }
+
+    /* Contact page */
+    #contact {
+        display: flex;
+        margin: auto;
+        padding: 0px !important;
+    }
+
+    .contact-page {
+        width: 100%;
+
+    }
+
+    .contactImg {
+        display: none;
+    }
+
+    .contactForm {
+        margin: 0px;
+    }
+
+    .inputGroup input, textarea {
+        width: 250px;
+    }
+
+    .inputGroup button {
+        width: 270px;
+    }
+
+}
